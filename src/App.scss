@@ -1,0 +1,21 @@
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+@import 'sass/base';
+
+@import 'sass/navbar';
+@import 'sass/main';
+@import 'sass/footer';
+
+@import 'sass/title';
+@import 'sass/product';
+@import 'sass/details';
+@import 'sass/button';
+@import 'sass/modal';
+@import 'sass/cart';
+@import 'sass/error';

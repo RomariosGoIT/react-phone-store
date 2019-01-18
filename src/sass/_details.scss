@@ -1,0 +1,42 @@
+.details {
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: min-content;
+  padding: 3.7rem 0;
+  &__title {
+    padding-bottom: 2rem;
+  }
+}
+
+.product-info {
+  display: grid;
+  grid-template-columns:
+    [img-start] minmax(40rem, max-content) [img-end content-start] minmax(
+      25rem,
+      max-content
+    )
+    [content-end];
+}
+.product-info__image {
+  grid-column: img-start / img-end;
+  padding: 2rem;
+  &-img {
+    width: 100%;
+  }
+}
+.product-info__dscr {
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-rows: repeat(6, max-content);
+  text-align: left;
+  align-content: space-evenly;
+  &-buttons {
+    display: flex;
+  }
+  &-info-text {
+    line-height: 2;
+  }
+  &-link:focus {
+    outline: none;
+  }
+}
